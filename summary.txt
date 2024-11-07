@@ -1,0 +1,5 @@
+
+Load balancer : Network
+target_type = "ip" #we used ip based (we can also use "instance")
+target_id        = aws_instance.Public1.private_ip <--------- used private_ip instead of id
+path = / # kept as root /
